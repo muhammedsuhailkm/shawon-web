@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": {
+      "src": "/images/17pro.png",
+      "alt": "17pro",
+      "className": "scale-90"
+    },
+    "rating": 5,
+    "name": "Apple iphone 17 pro 256GB",
+    "category": "mobile-phone",
+    "price": 4499,
+    "description": "Apple iPhone 17 Pro Max combines a premium design with cutting-edge performance.",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 2,
+    "image": {
+      "src": "/images/s34.png",
+      "alt": "samsung galaxy s24",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Samsung Galaxy S24 8GB 128GB",
+    "category": "mobile-phone",
+    "price": 2259,
+    "description": "Experience thr ultimate in smartphone technology with the samsung Galaxy S24.",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 3,
+    "image": {
+      "src": "/images/oppo.png",
+      "alt": "oppo",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Oppo Reno 13 5G 12GB 512GB",
+    "category": "mobile-phone",
+    "price": 2099,
+    "description": "Oppo Reno 13 runs on Android 15 OS that is overlaid with ColorOS15, offering a fresh,fast and productive while you're on the go.",
+    "isNew": false,
+    "isBestSeller": true
+  }
+]
