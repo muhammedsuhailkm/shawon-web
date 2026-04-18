@@ -96,9 +96,9 @@ export default function Home() {
             <div className="relative aspect-[0.8/1] min-h-[377px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:row-span-2 sm:aspect-auto sm:h-full sm:min-w-0">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/mobile.jpg"
+                  src="/images/mobilephone.jpg"
                   width={200}
-                  height={150}
+                  height={125}
                   alt="background collection"
                   quality={75}
                   sizes="(max-width: 640px) 80vw, (max-width: 1024px) 30vw, 262px"
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="relative aspect-[1/0.5] min-h-[180px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full sm:min-w-0">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/phonecases.jpg"
+                  src="/images/ccase.png"
                   width={262}
                   height={349}
                   alt="background collection"
@@ -212,102 +212,46 @@ export default function Home() {
         </div>
       </SectionLayout>
 
-      {/* Promotion section */}
-      <div className="grid overflow-hidden md:grid-cols-2 lg:h-full lg:max-h-[500px] lg:place-items-center">
-        <div className="w-full justify-end bg-gray-400 md:flex">
-          <Image
-            src="/images/promotion-card.png"
-            width={1250}
-            height={1080}
-            alt="promotion-card"
-            quality={80}
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="h-auto w-full object-cover lg:w-[460px]"
-          />
-        </div>
-
-        <div className="order-1 w-full bg-[#ffdd99] md:order-2">
-          <div className="w-full max-w-[720px] space-y-6 p-8">
-            <div className="space-y-4">
-              <Text weight={700} transform="uppercase" color="blue">
-                promotion
-              </Text>
-              <Heading as="h2" intent="base-section">
-                Hurry up! 40% OFF
-              </Heading>
-              <Text size="sm">Thousands of high tech are waiting for you</Text>
+      {/* Ad Banner section */}
+      <SectionLayout>
+        <div className="px-8 py-6 sm:py-10">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src="/images/head.jpg"
+                width={600}
+                height={400}
+                alt="ad-banner-1"
+                quality={80}
+                sizes="(max-width: 640px) 90vw, 30vw"
+                className="h-[200px] w-full object-cover transition-transform duration-300 hover:scale-105 sm:h-[220px] lg:h-[260px]"
+              />
             </div>
-            <div className="space-y-3">
-              <Text>Offer expires in:</Text>
-              <div className="flex gap-4">
-                <div className="w-fit">
-                  <div className="flex h-[60px] w-[60px] items-center justify-center bg-white">
-                    <Text
-                      size="3xl"
-                      weight={500}
-                      family="poppins"
-                      color="black/800"
-                    >
-                      02
-                    </Text>
-                  </div>
-                  <Text size="xs" color="black/800" className="text-center">
-                    Days
-                  </Text>
-                </div>
-                <div className="w-fit">
-                  <div className="flex h-[60px] w-[60px] items-center justify-center bg-white">
-                    <Text
-                      size="3xl"
-                      weight={500}
-                      family="poppins"
-                      color="black/800"
-                    >
-                      12
-                    </Text>
-                  </div>
-                  <Text size="xs" color="black/800" className="text-center">
-                    Hours
-                  </Text>
-                </div>
-                <div className="w-fit">
-                  <div className="flex h-[60px] w-[60px] items-center justify-center bg-white">
-                    <Text
-                      size="3xl"
-                      weight={500}
-                      family="poppins"
-                      color="black/800"
-                    >
-                      45
-                    </Text>
-                  </div>
-                  <Text size="xs" color="black/800" className="text-center">
-                    Minutes
-                  </Text>
-                </div>
-                <div className="w-fit">
-                  <div className="flex h-[60px] w-[60px] items-center justify-center bg-white">
-                    <Text
-                      size="3xl"
-                      weight={500}
-                      family="poppins"
-                      color="black/800"
-                    >
-                      05
-                    </Text>
-                  </div>
-                  <Text size="xs" color="black/800" className="text-center">
-                    Seconds
-                  </Text>
-                </div>
-              </div>
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src="/images/phonecases.jpg"
+                width={600}
+                height={400}
+                alt="ad-banner-2"
+                quality={80}
+                sizes="(max-width: 640px) 90vw, 30vw"
+                className="h-[200px] w-full object-cover transition-transform duration-300 hover:scale-105 sm:h-[220px] lg:h-[260px]"
+              />
             </div>
-            <Button fontSize="sm" className="py-1.5 md:text-base">
-              Shop now
-            </Button>
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src="/images/watch.jpg"
+                width={600}
+                height={400}
+                alt="ad-banner-3"
+                quality={80}
+                sizes="(max-width: 640px) 90vw, 30vw"
+                className="h-[200px] w-full object-cover transition-transform duration-300 hover:scale-105 sm:h-[220px] lg:h-[260px]"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </SectionLayout>
 
       {/* Features section */}
       <SectionLayout>

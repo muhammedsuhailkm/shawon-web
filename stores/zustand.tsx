@@ -19,7 +19,7 @@ export const useProductDetail = create<ProductDetailProps>()((set) => ({
 export type ProductCategory =
   | "mobile-phone"
   | "accessories"
-  | "gadgets & electronics"
+  | "gadgets-electronics"
   | "earbuds"
   | "chargers"
   | "headphones"

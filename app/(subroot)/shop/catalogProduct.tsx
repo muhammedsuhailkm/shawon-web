@@ -1,5 +1,8 @@
 "use client";
 
+// packages
+import { useSearchParams } from "next/navigation";
+
 // ui
 import { WishlistIcon } from "@/ui/assets/svg";
 import * as ProductCard from "@/ui/card/productCard";
@@ -8,13 +11,20 @@ import * as ProductCard from "@/ui/card/productCard";
 import { useProductDetail } from "@/stores/zustand";
 
 // data
-import products from "@/data/product.json";
+import allProducts from "@/data/product.json";
 
 // lib
 import { cn } from "@/lib/utils";
 
 const CatalogProduct = () => {
   const showDetail = useProductDetail((state) => state.showDetail);
+  const searchParams = useSearchParams();
+  const category = searchParams.get("category");
+
+  const products =
+    !category || category === "all"
+      ? allProducts
+      : allProducts.filter((product) => product.category === category);
   return (
     <div className="space-y-8 py-20 pt-8 lg:space-y-20">
       <div
@@ -39,9 +49,6 @@ const CatalogProduct = () => {
               <ProductCard.ThumbnailBadge>
                 <div className="space-y-1.5">
                   {product.isNew && <ProductCard.Badge>new</ProductCard.Badge>}
-                  <ProductCard.Badge intent="discount">
-                    50% off
-                  </ProductCard.Badge>
                 </div>
 
                 {!showDetail && <ProductCard.WishlistButton />}

@@ -31,12 +31,7 @@ const Footer = () => {
             <li className="font-inter text-sm font-normal text-[#b0b0b0]">
               <Link href="/">Shop</Link>
             </li>
-            <li className="font-inter text-sm font-normal text-[#b0b0b0]">
-              <Link href="/">Product</Link>
-            </li>
-            <li className="font-inter text-sm font-normal text-[#b0b0b0]">
-              <Link href="/">Blog</Link>
-            </li>
+
             <li className="font-inter text-sm font-normal text-[#b0b0b0]">
               <Link href="/">Contact Us</Link>
             </li>
@@ -200,12 +195,7 @@ const Footer = () => {
               <li className="text-center font-inter text-sm font-normal text-[#FEFEFE]">
                 <Link href="/">Shop</Link>
               </li>
-              <li className="text-center font-inter text-sm font-normal text-[#FEFEFE]">
-                <Link href="/">Product</Link>
-              </li>
-              <li className="text-center font-inter text-sm font-normal text-[#FEFEFE]">
-                <Link href="/">Blog</Link>
-              </li>
+
               <li className="text-center font-inter text-sm font-normal text-[#FEFEFE]">
                 <Link href="/">Contact Us</Link>
               </li>
