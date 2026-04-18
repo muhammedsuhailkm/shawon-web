@@ -19,11 +19,12 @@ export const useProductDetail = create<ProductDetailProps>()((set) => ({
 export type ProductCategory =
   | "mobile-phone"
   | "accessories"
-  | "gadgets"
+  | "gadgets & electronics"
   | "earbuds"
   | "chargers"
   | "headphones"
-  | "power-banks";
+  | "power-banks"
+  | "cases";
 
 export type ProductStoreItem = {
   id: number;
@@ -44,8 +45,12 @@ export type ProductStoreItem = {
 type ProductStoreProps = {
   products: ProductStoreItem[];
   selectedCategory: ProductCategory | "all";
-  setSelectedCategory: (category: ProductStoreProps["selectedCategory"]) => void;
-  getProductsByCategory: (category: ProductCategory | "all") => ProductStoreItem[];
+  setSelectedCategory: (
+    category: ProductStoreProps["selectedCategory"],
+  ) => void;
+  getProductsByCategory: (
+    category: ProductCategory | "all",
+  ) => ProductStoreItem[];
   getNewArrivals: () => ProductStoreItem[];
   getBestSellers: () => ProductStoreItem[];
 };

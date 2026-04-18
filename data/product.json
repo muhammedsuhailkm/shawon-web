@@ -43,5 +43,500 @@
     "description": "Oppo Reno 13 runs on Android 15 OS that is overlaid with ColorOS15, offering a fresh,fast and productive while you're on the go.",
     "isNew": false,
     "isBestSeller": true
+  },
+  {
+    "id": 4,
+    "image": {
+      "src": "/images/airpodlight.png",
+      "alt": "airpodlight",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Earpods Lightning connector",
+    "category": "accessories",
+    "price": 69,
+    "description": "Earpods with Lightning Connector deliver rich, high-quality audio with deep bass and crisp treble. The built-in microphone allows for clear hands-free calls, while the compact design ensures comfortable wear. Perfect for on-the-go listening and staying connected.",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 5,
+    "image": {
+      "src": "/images/jbl.png",
+      "alt": "jbl",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "JBL Tune 310 BT Headphones",
+    "category": "accessories",
+    "price": 149,
+    "description": "JBL Pure Bass sound, 40H battery life, and fast charging. Foldable for portability, with Voice Assistant integration and comfortable fit.",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 6,
+    "image": {
+      "src": "/images/keychain.png",
+      "alt": "keychain",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " Keychain ",
+    "category": "accessories",
+    "price": 101,
+    "description": "Best Quality Keychain",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 7,
+    "image": {
+      "src": "/images/phoneholder.png",
+      "alt": "phoneholder",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " Phone Holder ",
+    "category": "accessories",
+    "price": 20,
+    "description": "Best Quality Phone Holder",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 8,
+    "image": {
+      "src": "/images/strap.png",
+      "alt": "strap",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " SmartWatch Strap ",
+    "category": "accessories",
+    "price": 10,
+    "description": "Best Quality Smartwatch Strap",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 9,
+    "image": {
+      "src": "/images/tune110.png",
+      "alt": "tune110",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " JBL TUNE110 wired Headphones ",
+    "category": "accessories",
+    "price": 29,
+    "description": "JBL Pure Bass sound,  with Voice Assistant integration and comfortable fit.",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 10,
+    "image": {
+      "src": "/images/ucbav.png",
+      "alt": "usbav",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " Usb-c to AV Adapter ",
+    "category": "accessories",
+    "price": 150,
+    "description": "Usb-C to AV Adapter",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 11,
+    "image": {
+      "src": "/images/bcase.png",
+      "alt": "acase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " Android Case #1 ",
+    "category": "cases",
+    "price": 15,
+    "description": "Android Case",
+    "isNew": false,
+    "isBestSeller": true
+  },
+  {
+    "id": 12,
+    "image": {
+      "src": "/images/ccase.png",
+      "alt": "acase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " Iphone Case #1 ",
+    "category": "cases",
+    "price": 20,
+    "description": "Iphone Case",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 13,
+    "image": {
+      "src": "/images/dcase.png",
+      "alt": "dcase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": " Android Case #2 ",
+    "category": "cases",
+    "price": 20,
+    "description": "Android Case",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 14,
+    "image": {
+      "src": "/images/ecase.png",
+      "alt": "ecase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Android Case #3 ",
+    "category": "cases",
+    "price": 20,
+    "description": "Android Case",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 15,
+    "image": {
+      "src": "/images/gcase.png",
+      "alt": "gcase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Iphone Case #2 ",
+    "category": "cases",
+    "price": 20,
+    "description": "Iphone Case",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 16,
+    "image": {
+      "src": "/images/hcase.png",
+      "alt": "hcase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Iphone Case #3 ",
+    "category": "cases",
+    "price": 20,
+    "description": "Iphone Case",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 17,
+    "image": {
+      "src": "/images/aircase.png",
+      "alt": "airpodcase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Airpod Case #1 ",
+    "category": "cases",
+    "price": 200,
+    "description": "Airpod Case",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 18,
+    "image": {
+      "src": "/images/glass.png",
+      "alt": "screen gaurd #1",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Screen Gaurd #1 ",
+    "category": "cases",
+    "price": 20,
+    "description": "Screen Gaurd",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 19,
+    "image": {
+      "src": "/images/screen.png",
+      "alt": "screen gaurd #2",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Screen Gaurd #2",
+    "category": "cases",
+    "price": 20,
+    "description": "Screen Gaurd",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 20,
+    "image": {
+      "src": "/images/adapter.png",
+      "alt": "adapter",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Adapter #1",
+    "category": "chargers",
+    "price": 30,
+    "description": "Adapter",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 21,
+    "image": {
+      "src": "/images/appleadapter.png",
+      "alt": "appleadapter",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Apple Adapter",
+    "category": "chargers",
+    "price": 50,
+    "description": "Adapter",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 22,
+    "image": {
+      "src": "/images/dualc-adapter.png",
+      "alt": "dualc-adapter",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Dual Type-C Adapter",
+    "category": "chargers",
+    "price": 50,
+    "description": "Best Quality Dual Type-C Adapter",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 23,
+    "image": {
+      "src": "/images/pb1.png",
+      "alt": "powerbank",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Powerbank #1",
+    "category": "chargers",
+    "price": 59,
+    "description": "Best Quality Power Bank",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 24,
+    "image": {
+      "src": "/images/pb2.png",
+      "alt": "powerbank",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Powerbank #2",
+    "category": "chargers",
+    "price": 59,
+    "description": "Best Quality Power Bank",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 25,
+    "image": {
+      "src": "/images/fan2.png",
+      "alt": "fan",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Neck Fan",
+    "category": "gadgets & electronics",
+    "price": 59,
+    "description": "Best Quality Neck Fan",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 26,
+    "image": {
+      "src": "/images/fan.png",
+      "alt": "fan",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Portable Fan",
+    "category": "gadgets & electronics",
+    "price": 59,
+    "description": "Best Quality Portable Fan",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 27,
+    "image": {
+      "src": "/images/HT30.png",
+      "alt": "HT30",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "HT30",
+    "category": "gadgets & electronics",
+    "price": 99,
+    "description": "Best Quality HT30 ",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 28,
+    "image": {
+      "src": "/images/oud.png",
+      "alt": "oud",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Oud burner",
+    "category": "gadgets & electronics",
+    "price": 599,
+    "description": "Best Quality Oud burner",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 29,
+    "image": {
+      "src": "/images/ring.png",
+      "alt": "ringlight",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Ringlight",
+    "category": "gadgets & electronics",
+    "price": 79,
+    "description": "Best Quality Ringlight",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 30,
+    "image": {
+      "src": "/images/smallfan.png",
+      "alt": "smallfan",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Small Fan",
+    "category": "gadgets & electronics",
+    "price": 29,
+    "description": "Best Quality Small Fan",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 31,
+    "image": {
+      "src": "/images/steam.png",
+      "alt": "steamcleaner",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Steam Cleaner",
+    "category": "gadgets & electronics",
+    "price": 69,
+    "description": "Best Quality Steam Cleaner",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 32,
+    "image": {
+      "src": "/images/tyrepressure.png",
+      "alt": "tyrepressure",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Tyre Pressure",
+    "category": "gadgets & electronics",
+    "price": 159,
+    "description": "Best Quality Tyre Pressure",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 33,
+    "image": {
+      "src": "/images/xiaomitv.png",
+      "alt": "xiaomitv",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Xiaomi TV Box",
+    "category": "gadgets & electronics",
+    "price": 199,
+    "description": "Best Quality Xiaomi TV Box",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 34,
+    "image": {
+      "src": "/images/salon1.png",
+      "alt": "salon1",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Hair curler",
+    "category": "gadgets & electronics",
+    "price": 89,
+    "description": "Best Quality Hair curler",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 35,
+    "image": {
+      "src": "/images/salon2.png",
+      "alt": "salon2",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Hair Straightener Brush",
+    "category": "gadgets & electronics",
+    "price": 150,
+    "description": "Best Quality Hair Straightener Brush",
+    "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 36,
+    "image": {
+      "src": "/images/salon3.png",
+      "alt": "salon3",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 3,
+    "name": "Hair Straightener ",
+    "category": "gadgets & electronics",
+    "price": 129,
+    "description": "Best Quality Hair Straightener",
+    "isNew": false,
+    "isBestSeller": false
   }
 ]

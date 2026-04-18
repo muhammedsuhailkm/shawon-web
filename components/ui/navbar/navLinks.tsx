@@ -55,6 +55,11 @@ const links: NavLinkProps[] = [
         ],
       },
       {
+        id: "cases",
+        path: "/shop?category=cases",
+        name: "Cases",
+      },
+      {
         id: "headphones",
         path: "/shop?category=headphones",
         name: "Headphones",

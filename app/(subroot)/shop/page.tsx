@@ -45,6 +45,10 @@ const categories = [
     value: "earbud",
     text: "Earbud",
   },
+  {
+    value: "cases",
+    text: "Cases",
+  },
 ];
 
 const prices = [

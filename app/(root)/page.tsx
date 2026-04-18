@@ -96,19 +96,19 @@ export default function Home() {
             <div className="relative aspect-[0.8/1] min-h-[377px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:row-span-2 sm:aspect-auto sm:h-full sm:min-w-0">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/sumplekuping-2.png"
-                  width={262}
-                  height={349}
+                  src="/images/mobile.jpg"
+                  width={200}
+                  height={150}
                   alt="background collection"
                   quality={75}
                   sizes="(max-width: 640px) 80vw, (max-width: 1024px) 30vw, 262px"
-                  className="aspect-[0.75/1] w-[80%] -translate-y-[10%] object-center md:w-[60%]"
+                  className="aspect-[0.75/1] w-[50%] -translate-y-[10%] object-center md:w-[40%]"
                 />
               </div>
 
               <div className="relative flex h-full flex-col justify-end gap-2">
                 <Heading as="h3" intent="collection-card">
-                  Headband
+                  Mobiles
                 </Heading>
                 <Link href="/shop" className="w-fit">
                   <span className="flex w-fit items-center gap-1 border-b border-[#121212]">
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="relative aspect-[1/0.5] min-h-[180px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full sm:min-w-0">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/sumplekuping-4.png"
+                  src="/images/phonecases.jpg"
                   width={262}
                   height={349}
                   alt="background collection"
@@ -135,7 +135,7 @@ export default function Home() {
 
               <div className="relative flex h-full flex-col justify-end gap-2">
                 <Heading as="h3" intent="collection-card">
-                  Earbuds
+                  Mobile Cases
                 </Heading>
                 <Link href="/shop" className="w-fit">
                   <span className="flex w-fit items-center gap-1 border-b border-[#121212]">
@@ -192,7 +192,9 @@ export default function Home() {
               <ProductCard.Root key={product.id} data={product}>
                 <ProductCard.Thumbnail>
                   <ProductCard.ThumbnailBadge>
-                    {product.isNew && <ProductCard.Badge>new</ProductCard.Badge>}
+                    {product.isNew && (
+                      <ProductCard.Badge>new</ProductCard.Badge>
+                    )}
                     <ProductCard.WishlistButton />
                   </ProductCard.ThumbnailBadge>
 
