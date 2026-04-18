@@ -14,7 +14,7 @@ export default function Logo({ className, showTagline = false }: LogoProps) {
       aria-label="Shawon Telecom WLL"
     >
       <Image
-        src="/images/logoo.png"
+        src="/images/logoo.webp"
         alt=""
         width={507}
         height={299}
