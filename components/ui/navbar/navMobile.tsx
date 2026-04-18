@@ -1,17 +1,17 @@
+"use client";
+
 // package
 import Link from "next/link";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 // ui
 import Logo from "@/ui/assets/logo";
-import Button from "@/ui/button";
 import {
-  CartIcon,
   CloseIcon,
   FacebookIcon,
   InstagramIcon,
-  NotificationCount,
   SearchIcon,
-  WishlistIcon,
   YoutubeIcon,
 } from "@/ui/assets/svg";
 
@@ -28,15 +28,42 @@ const links = [
     id: "shop",
     path: "/shop",
     name: "Shop",
-  },
-  {
-    id: "product",
-    path: "/product",
-    name: "Product",
+    subLinks: [
+      {
+        id: "all-categories",
+        path: "/shop",
+        name: "All Categories",
+      },
+      {
+        id: "mobile-phone",
+        path: "/shop?category=mobile-phone",
+        name: "Mobile Phone",
+      },
+      {
+        id: "accessories",
+        path: "/shop?category=accessories",
+        name: "Accessories",
+      },
+      {
+        id: "cases",
+        path: "/shop?category=cases",
+        name: "Cases",
+      },
+      {
+        id: "gadgets-electronics",
+        path: "/shop?category=gadgets-electronics",
+        name: "Gadgets & Electronics",
+      },
+      {
+        id: "chargers",
+        path: "/shop?category=chargers",
+        name: "Chargers",
+      },
+    ],
   },
   {
     id: "contact-us",
-    path: "/contact-us",
+    path: "#",
     name: "Contact Us",
   },
 ];
@@ -48,6 +75,8 @@ export default function NavMobile({
   onClick: () => void;
   open: boolean;
 }) {
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
   return (
     <div
       className={cn(
@@ -79,6 +108,7 @@ export default function NavMobile({
               placeholder="Search"
             />
           </div>
+
           {/* navbar links */}
           <ul className="grid grid-cols-1">
             {links.map((link) => (
@@ -86,12 +116,49 @@ export default function NavMobile({
                 key={link.id}
                 className="border-b border-[#E8ECEF] first:pt-0"
               >
-                <Link
-                  href={link.path}
-                  className="block py-4 font-inter text-sm font-medium text-[#141718]"
-                >
-                  {link.name}
-                </Link>
+                {link.subLinks ? (
+                  <>
+                    <button
+                      onClick={() =>
+                        setOpenDropdown(
+                          openDropdown === link.id ? null : link.id,
+                        )
+                      }
+                      className="flex w-full items-center justify-between py-4 font-inter text-sm font-medium text-[#141718]"
+                    >
+                      {link.name}
+                      <ChevronDown
+                        className={cn(
+                          "h-4 w-4 transition-transform duration-200",
+                          openDropdown === link.id && "rotate-180",
+                        )}
+                      />
+                    </button>
+                    {openDropdown === link.id && (
+                      <ul className="pb-3 pl-4">
+                        {link.subLinks.map((sub) => (
+                          <li key={sub.id}>
+                            <Link
+                              href={sub.path}
+                              onClick={onClick}
+                              className="block py-2 font-inter text-sm text-[#6C7275]"
+                            >
+                              {sub.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={link.path}
+                    onClick={onClick}
+                    className="block py-4 font-inter text-sm font-medium text-[#141718]"
+                  >
+                    {link.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -99,46 +166,7 @@ export default function NavMobile({
 
         {/* bottom section */}
         <div className="flex flex-col gap-5">
-          {/* cart & wishlist */}
-          <ul>
-            <li>
-              <Link
-                href="/cart"
-                className="flex items-center justify-between border-b border-[#E8ECEF] py-4"
-              >
-                <span className="font-inter text-sm font-medium text-[#141718]">
-                  Cart
-                </span>
-
-                <div className="flex items-center gap-1.5">
-                  <CartIcon className="w-6" />
-                  <NotificationCount count={6} />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/cart"
-                className="flex items-center justify-between border-b border-[#E8ECEF] py-4"
-              >
-                <span className="font-inter text-sm font-medium text-[#141718]">
-                  Wishlist
-                </span>
-
-                <div className="flex items-center gap-1.5">
-                  <WishlistIcon className="w-6" />
-                  <NotificationCount count={12} />
-                </div>
-              </Link>
-            </li>
-          </ul>
-
-          {/* login button */}
-          <Button width="full" fontSize="lg" className="py-2.5">
-            Sign In
-          </Button>
-
-          {/* social media button */}
+          {/* social media */}
           <div className="flex items-center gap-6">
             <InstagramIcon className="w-6" />
             <FacebookIcon className="w-6" />

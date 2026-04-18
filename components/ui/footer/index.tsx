@@ -29,7 +29,7 @@ const Footer = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="font-inter text-sm font-normal text-[#b0b0b0]">
-              <Link href="/">Shop</Link>
+              <Link href="/shop">Shop</Link>
             </li>
 
             <li className="font-inter text-sm font-normal text-[#b0b0b0]">
@@ -193,7 +193,7 @@ const Footer = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="text-center font-inter text-sm font-normal text-[#FEFEFE]">
-                <Link href="/">Shop</Link>
+                <Link href="/shop">Shop</Link>
               </li>
 
               <li className="text-center font-inter text-sm font-normal text-[#FEFEFE]">

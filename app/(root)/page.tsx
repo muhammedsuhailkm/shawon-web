@@ -52,13 +52,13 @@ export default function Home() {
         {/* Image content */}
         <div className="flex h-auto w-full items-end justify-center overflow-hidden lg:order-1">
           <Image
-            src="/images/manpage.png"
+            src="/images/manpage.webp"
             width={700}
             height={861}
-            alt="nigga-listening-music"
-            preload
-            quality={80}
-            sizes="(max-width: 1024px) 150vw, 100vw"
+            alt="Shawon Telecom accessories showcase"
+            priority
+            quality={75}
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="w-full max-w-[430px] object-cover object-top lg:max-w-[520px] xl:max-w-[620px]"
           />
         </div>
@@ -110,7 +110,7 @@ export default function Home() {
                 <Heading as="h3" intent="collection-card">
                   Mobiles
                 </Heading>
-                <Link href="/shop" className="w-fit">
+                <Link href="/shop?category=mobile-phone" className="w-fit">
                   <span className="flex w-fit items-center gap-1 border-b border-[#121212]">
                     Collection{" "}
                     <ArrowRightIcon stroke="#121212" className="h-4 w-4" />
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="relative aspect-[1/0.5] min-h-[180px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full sm:min-w-0">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/ccase.png"
+                  src="/images/ccase.webp"
                   width={262}
                   height={349}
                   alt="background collection"
@@ -137,7 +137,7 @@ export default function Home() {
                 <Heading as="h3" intent="collection-card">
                   Mobile Cases
                 </Heading>
-                <Link href="/shop" className="w-fit">
+                <Link href="/shop?category=cases" className="w-fit">
                   <span className="flex w-fit items-center gap-1 border-b border-[#121212]">
                     Collection{" "}
                     <ArrowRightIcon stroke="#121212" className="h-4 w-4" />
@@ -150,7 +150,7 @@ export default function Home() {
             <div className="relative aspect-[1/0.5] min-h-[180px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full sm:min-w-0">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/sumplekuping-5.png"
+                  src="/images/phoneholder.webp"
                   width={262}
                   height={349}
                   alt="background collection"
@@ -164,7 +164,7 @@ export default function Home() {
                 <Heading as="h3" intent="collection-card">
                   Accessories
                 </Heading>
-                <Link href="/shop" className="w-fit">
+                <Link href="/shop?category=accessories" className="w-fit">
                   <span className="flex w-fit items-center gap-1 border-b border-[#121212]">
                     Collection{" "}
                     <ArrowRightIcon stroke="#121212" className="h-4 w-4" />

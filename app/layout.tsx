@@ -36,7 +36,7 @@ export default function RootLayout({
       className={cn(inter.variable, poppins.variable)}
       suppressHydrationWarning
     >
-      <body suppressHydrationWarning>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -65,7 +65,7 @@ export default function CategoryFilter() {
           </SelectIcon>
         </SelectTrigger>
 
-        <SelectContent className="rounded-xl" position="popper" side="bottom" sideOffset={4}>
+        <SelectContent className="rounded-xl" position="popper" avoidCollisions={false} sideOffset={4}>
           {categories.map((category) => (
             <SelectItem
               key={category.value}

@@ -52,10 +52,9 @@ const links: NavLinkProps[] = [
       },
     ],
   },
-
   {
     id: "contact-us",
-    path: "/contact-us",
+    path: "#",
     name: "Contact Us",
   },
 ];

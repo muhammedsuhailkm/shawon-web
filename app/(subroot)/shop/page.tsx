@@ -1,3 +1,6 @@
+// packages
+import { Suspense } from "react";
+
 // layouts
 import SectionLayout from "@/layouts/sectionLayout";
 
@@ -34,11 +37,13 @@ export default function Page() {
           </Heading>
         </div>
 
-        <div className="py-4">
-          <CategoryFilter />
-        </div>
+        <Suspense fallback={<div className="py-4">Loading...</div>}>
+          <div className="py-4">
+            <CategoryFilter />
+          </div>
 
-        <CatalogProduct />
+          <CatalogProduct />
+        </Suspense>
       </div>
     </SectionLayout>
   );

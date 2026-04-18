@@ -56,9 +56,9 @@ const Navbar: React.FC<NavbarProps> = () => {
             <NavLinks />
           </div>
 
-          <div className="flex items-center gap-1 lg:basis-1/4 lg:justify-end lg:gap-4">
-            <SearchIcon className="hidden lg:block" />
-            <UserIcon className="hidden lg:block" />
+          <div className="flex items-center gap-3 lg:basis-1/4 lg:justify-end lg:gap-4">
+            <SearchIcon className="w-5 lg:w-6" />
+            <UserIcon className="w-5 lg:w-6" />
           </div>
 
           {/* mobile navbar  */}

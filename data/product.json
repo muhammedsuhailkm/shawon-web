@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": {
-      "src": "/images/17pro.png",
+      "src": "/images/17pro.webp",
       "alt": "17pro",
       "className": "scale-90"
     },
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "image": {
-      "src": "/images/s34.png",
+      "src": "/images/s34.webp",
       "alt": "samsung galaxy s24",
       "className": "scale-75 translate-y-0"
     },
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "image": {
-      "src": "/images/oppo.png",
+      "src": "/images/oppo.webp",
       "alt": "oppo",
       "className": "scale-75 translate-y-0"
     },
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "image": {
-      "src": "/images/airpodlight.png",
+      "src": "/images/airpodlight.webp",
       "alt": "airpodlight",
       "className": "scale-75 translate-y-0"
     },
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "image": {
-      "src": "/images/jbl.png",
+      "src": "/images/jbl.webp",
       "alt": "jbl",
       "className": "scale-75 translate-y-0"
     },
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "image": {
-      "src": "/images/keychain.png",
+      "src": "/images/keychain.webp",
       "alt": "keychain",
       "className": "scale-75 translate-y-0"
     },
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "image": {
-      "src": "/images/phoneholder.png",
+      "src": "/images/phoneholder.webp",
       "alt": "phoneholder",
       "className": "scale-75 translate-y-0"
     },
@@ -107,7 +107,7 @@
   {
     "id": 8,
     "image": {
-      "src": "/images/strap.png",
+      "src": "/images/strap.webp",
       "alt": "strap",
       "className": "scale-75 translate-y-0"
     },
@@ -122,7 +122,7 @@
   {
     "id": 9,
     "image": {
-      "src": "/images/tune110.png",
+      "src": "/images/tune110.webp",
       "alt": "tune110",
       "className": "scale-75 translate-y-0"
     },
@@ -137,7 +137,7 @@
   {
     "id": 10,
     "image": {
-      "src": "/images/ucbav.png",
+      "src": "/images/ucbav.webp",
       "alt": "usbav",
       "className": "scale-75 translate-y-0"
     },
@@ -152,7 +152,7 @@
   {
     "id": 11,
     "image": {
-      "src": "/images/bcase.png",
+      "src": "/images/bcase.webp",
       "alt": "acase",
       "className": "scale-75 translate-y-0"
     },
@@ -167,7 +167,7 @@
   {
     "id": 12,
     "image": {
-      "src": "/images/ccase.png",
+      "src": "/images/ccase.webp",
       "alt": "acase",
       "className": "scale-75 translate-y-0"
     },
@@ -182,7 +182,7 @@
   {
     "id": 13,
     "image": {
-      "src": "/images/dcase.png",
+      "src": "/images/dcase.webp",
       "alt": "dcase",
       "className": "scale-75 translate-y-0"
     },
@@ -197,7 +197,7 @@
   {
     "id": 14,
     "image": {
-      "src": "/images/ecase.png",
+      "src": "/images/ecase.webp",
       "alt": "ecase",
       "className": "scale-75 translate-y-0"
     },
@@ -212,7 +212,7 @@
   {
     "id": 15,
     "image": {
-      "src": "/images/gcase.png",
+      "src": "/images/gcase.webp",
       "alt": "gcase",
       "className": "scale-75 translate-y-0"
     },
@@ -227,7 +227,7 @@
   {
     "id": 16,
     "image": {
-      "src": "/images/hcase.png",
+      "src": "/images/hcase.webp",
       "alt": "hcase",
       "className": "scale-75 translate-y-0"
     },
@@ -242,7 +242,7 @@
   {
     "id": 17,
     "image": {
-      "src": "/images/aircase.png",
+      "src": "/images/aircase.webp",
       "alt": "airpodcase",
       "className": "scale-75 translate-y-0"
     },
@@ -257,7 +257,7 @@
   {
     "id": 18,
     "image": {
-      "src": "/images/glass.png",
+      "src": "/images/glass.webp",
       "alt": "screen gaurd #1",
       "className": "scale-75 translate-y-0"
     },
@@ -272,7 +272,7 @@
   {
     "id": 19,
     "image": {
-      "src": "/images/screen.png",
+      "src": "/images/screen.webp",
       "alt": "screen gaurd #2",
       "className": "scale-75 translate-y-0"
     },
@@ -287,7 +287,7 @@
   {
     "id": 20,
     "image": {
-      "src": "/images/adapter.png",
+      "src": "/images/adapter.webp",
       "alt": "adapter",
       "className": "scale-75 translate-y-0"
     },
@@ -302,7 +302,7 @@
   {
     "id": 21,
     "image": {
-      "src": "/images/appleadapter.png",
+      "src": "/images/appleadapter.webp",
       "alt": "appleadapter",
       "className": "scale-75 translate-y-0"
     },
@@ -317,7 +317,7 @@
   {
     "id": 22,
     "image": {
-      "src": "/images/dualc-adapter.png",
+      "src": "/images/dualc-adapter.webp",
       "alt": "dualc-adapter",
       "className": "scale-75 translate-y-0"
     },
@@ -332,7 +332,7 @@
   {
     "id": 23,
     "image": {
-      "src": "/images/pb1.png",
+      "src": "/images/pb1.webp",
       "alt": "powerbank",
       "className": "scale-75 translate-y-0"
     },
@@ -347,7 +347,7 @@
   {
     "id": 24,
     "image": {
-      "src": "/images/pb2.png",
+      "src": "/images/pb2.webp",
       "alt": "powerbank",
       "className": "scale-75 translate-y-0"
     },
@@ -362,7 +362,7 @@
   {
     "id": 25,
     "image": {
-      "src": "/images/fan2.png",
+      "src": "/images/fan2.webp",
       "alt": "fan",
       "className": "scale-75 translate-y-0"
     },
@@ -377,7 +377,7 @@
   {
     "id": 26,
     "image": {
-      "src": "/images/fan.png",
+      "src": "/images/fan.webp",
       "alt": "fan",
       "className": "scale-75 translate-y-0"
     },
@@ -392,7 +392,7 @@
   {
     "id": 27,
     "image": {
-      "src": "/images/HT30.png",
+      "src": "/images/HT30.webp",
       "alt": "HT30",
       "className": "scale-75 translate-y-0"
     },
@@ -407,7 +407,7 @@
   {
     "id": 28,
     "image": {
-      "src": "/images/oud.png",
+      "src": "/images/oud.webp",
       "alt": "oud",
       "className": "scale-75 translate-y-0"
     },
@@ -422,7 +422,7 @@
   {
     "id": 29,
     "image": {
-      "src": "/images/ring.png",
+      "src": "/images/ring.webp",
       "alt": "ringlight",
       "className": "scale-75 translate-y-0"
     },
@@ -437,7 +437,7 @@
   {
     "id": 30,
     "image": {
-      "src": "/images/smallfan.png",
+      "src": "/images/smallfan.webp",
       "alt": "smallfan",
       "className": "scale-75 translate-y-0"
     },
@@ -452,7 +452,7 @@
   {
     "id": 31,
     "image": {
-      "src": "/images/steam.png",
+      "src": "/images/steam.webp",
       "alt": "steamcleaner",
       "className": "scale-75 translate-y-0"
     },
@@ -467,7 +467,7 @@
   {
     "id": 32,
     "image": {
-      "src": "/images/tyrepressure.png",
+      "src": "/images/tyrepressure.webp",
       "alt": "tyrepressure",
       "className": "scale-75 translate-y-0"
     },
@@ -482,7 +482,7 @@
   {
     "id": 33,
     "image": {
-      "src": "/images/xiaomitv.png",
+      "src": "/images/xiaomitv.webp",
       "alt": "xiaomitv",
       "className": "scale-75 translate-y-0"
     },
@@ -497,7 +497,7 @@
   {
     "id": 34,
     "image": {
-      "src": "/images/salon1.png",
+      "src": "/images/salon1.webp",
       "alt": "salon1",
       "className": "scale-75 translate-y-0"
     },
@@ -512,7 +512,7 @@
   {
     "id": 35,
     "image": {
-      "src": "/images/salon2.png",
+      "src": "/images/salon2.webp",
       "alt": "salon2",
       "className": "scale-75 translate-y-0"
     },
@@ -527,7 +527,7 @@
   {
     "id": 36,
     "image": {
-      "src": "/images/salon3.png",
+      "src": "/images/salon3.webp",
       "alt": "salon3",
       "className": "scale-75 translate-y-0"
     },
