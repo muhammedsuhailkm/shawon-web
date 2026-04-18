@@ -21,8 +21,50 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shawon Telecom WLL - Mobile wholesale accessories",
-  description: "Shawon Telecom WLL - Mobile wholesale accessories",
+  title: {
+    default: "Shawon Telecom WLL - Mobile Wholesale Accessories in Qatar",
+    template: "%s | Shawon Telecom WLL",
+  },
+  description:
+    "Shawon Telecom WLL is a leading wholesale supplier of mobile phones, accessories, cases, chargers, and gadgets in Doha, Qatar. Quality gear at unbeatable wholesale prices.",
+  keywords: [
+    "mobile accessories Qatar",
+    "wholesale mobile accessories",
+    "phone cases Doha",
+    "chargers Qatar",
+    "Shawon Telecom",
+    "mobile phone wholesale",
+    "gadgets electronics Qatar",
+    "phone accessories wholesale Doha",
+  ],
+  authors: [{ name: "Shawon Telecom WLL" }],
+  creator: "Shawon Telecom WLL",
+  metadataBase: new URL("https://shawontelecom.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Shawon Telecom WLL",
+    title: "Shawon Telecom WLL - Mobile Wholesale Accessories in Qatar",
+    description:
+      "Quality mobile phones, accessories, cases, chargers & gadgets at wholesale prices in Doha, Qatar.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shawon Telecom WLL - Mobile Wholesale Accessories",
+    description:
+      "Quality mobile accessories at wholesale prices in Doha, Qatar.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
