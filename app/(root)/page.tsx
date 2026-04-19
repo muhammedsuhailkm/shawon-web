@@ -93,7 +93,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:h-[560px]">
             {/* Main collection */}
-            <div className="relative aspect-[0.8/1] min-h-[377px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:row-span-2 sm:aspect-auto sm:h-full sm:min-w-0">
+            <div className="relative aspect-[1.2/1] w-full bg-[#F3F5F7] p-8 sm:row-span-2 sm:aspect-auto sm:h-full">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
                   src="/images/mobilephone.jpg"
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
 
             {/* Another collection */}
-            <div className="relative aspect-[1/0.5] min-h-[180px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full sm:min-w-0">
+            <div className="relative aspect-[2/1] w-full bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
                   src="/images/ccase.webp"
@@ -129,7 +129,7 @@ export default function Home() {
                   alt="background collection"
                   quality={75}
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 262px"
-                  className="aspect-[0.75/1] w-[50%] translate-x-1/2 md:w-[40%]"
+                  className="aspect-[0.75/1] w-[40%] translate-x-1/2 sm:w-[50%] md:w-[40%]"
                 />
               </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
 
             {/* Another collection */}
-            <div className="relative aspect-[1/0.5] min-h-[180px] w-full min-w-[311px] bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full sm:min-w-0">
+            <div className="relative aspect-[2/1] w-full bg-[#F3F5F7] p-8 sm:aspect-auto sm:h-full">
               <div className="absolute inset-0 flex h-full w-full items-center justify-center overflow-hidden">
                 <Image
                   src="/images/phoneholder.webp"
@@ -156,7 +156,7 @@ export default function Home() {
                   alt="background collection"
                   quality={75}
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 262px"
-                  className="aspect-[0.75/1] w-[50%] translate-x-1/2 md:w-[40%]"
+                  className="aspect-[0.75/1] w-[40%] translate-x-1/2 sm:w-[50%] md:w-[40%]"
                 />
               </div>
 
