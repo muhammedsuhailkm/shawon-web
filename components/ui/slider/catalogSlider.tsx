@@ -19,6 +19,7 @@ export default function CatalogSlider() {
   const products = useProductsStore((state) => state.getNewArrivals());
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const [loaded, setLoaded] = useState<boolean>(false);
+  const totalSlides = products.length;
   const [slideRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     slideChanged(slider) {
@@ -30,6 +31,7 @@ export default function CatalogSlider() {
     slides: {
       spacing: 8,
       perView: 2,
+      origin: 0,
     },
     mode: "snap",
     breakpoints: {
@@ -37,6 +39,7 @@ export default function CatalogSlider() {
         slides: {
           perView: 3,
           spacing: 16,
+          origin: 0,
         },
         mode: "free-snap",
       },
@@ -44,6 +47,7 @@ export default function CatalogSlider() {
         slides: {
           perView: 4,
           spacing: 16,
+          origin: 0,
         },
         mode: "free-snap",
       },
@@ -51,15 +55,16 @@ export default function CatalogSlider() {
         slides: {
           perView: 5,
           spacing: 16,
+          origin: 0,
         },
         mode: "free-snap",
       },
     },
     renderMode: "performance",
   });
-  const maxSlide = instanceRef.current?.track.details.maxIdx ?? 0;
+
   const canGoPrev = currentSlide > 0;
-  const canGoNext = currentSlide < maxSlide;
+  const canGoNext = currentSlide < totalSlides - 1;
 
   return (
     <div className="relative">
@@ -67,13 +72,15 @@ export default function CatalogSlider() {
         <>
           <button
             onClick={() => instanceRef.current?.prev()}
-            className="absolute left-2 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow md:flex"
+            disabled={!canGoPrev}
+            className="absolute left-2 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow transition-opacity disabled:cursor-not-allowed disabled:opacity-40 md:flex"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button
             onClick={() => instanceRef.current?.next()}
-            className="absolute right-2 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow md:flex"
+            disabled={!canGoNext}
+            className="absolute right-2 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow transition-opacity disabled:cursor-not-allowed disabled:opacity-40 md:flex"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
@@ -113,19 +120,19 @@ export default function CatalogSlider() {
             onClick={() => instanceRef.current?.prev()}
             disabled={!canGoPrev}
             aria-label="Previous new arrival"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#121212] disabled:cursor-not-allowed disabled:opacity-40"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#121212] transition-colors hover:bg-[#121212] hover:text-white disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-inherit"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
           <span className="font-inter text-sm font-medium text-[#6C7275]">
-            {currentSlide + 1} / {maxSlide + 1}
+            {currentSlide + 1} / {totalSlides}
           </span>
           <button
             type="button"
             onClick={() => instanceRef.current?.next()}
             disabled={!canGoNext}
             aria-label="Next new arrival"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#121212] disabled:cursor-not-allowed disabled:opacity-40"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#121212] transition-colors hover:bg-[#121212] hover:text-white disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-inherit"
           >
             <ChevronRight className="h-5 w-5" />
           </button>
