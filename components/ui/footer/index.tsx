@@ -223,12 +223,16 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-6">
-              <InstagramIcon
-                fill="#FEFEFE"
-                stroke="#FEFEFE"
-                className="h-6 w-6"
-              />
-              <FacebookIcon stroke="#FEFEFE" className="h-6 w-6" />
+              <a href="https://www.instagram.com/shawon_telecom_w.l.l?utm_source=qr&igsh=cmN2enV5dW5ma3hy" target="_blank" rel="noopener noreferrer">
+                <InstagramIcon
+                  fill="#FEFEFE"
+                  stroke="#FEFEFE"
+                  className="h-6 w-6"
+                />
+              </a>
+              <a href="https://www.facebook.com/share/1BLJN9jDo7/" target="_blank" rel="noopener noreferrer">
+                <FacebookIcon stroke="#FEFEFE" className="h-6 w-6" />
+              </a>
               <YoutubeIcon stroke="#FEFEFE" className="h-6 w-6" />
             </div>
           </div>

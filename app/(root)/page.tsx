@@ -36,7 +36,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 p-8 sm:max-w-[600px] md:max-w-[600px] md:py-16 lg:order-2 lg:max-w-none lg:items-start lg:p-0">
           <div className="space-y-2 text-center lg:text-left">
             <Heading as="h1" intent="hero-section">
-              Smart accessories,{" "}
+              Smart Phone & Accessories,{" "}
               <span className="text-[#65b2e1]">smarter living. </span> Shop the
               future today..
             </Heading>

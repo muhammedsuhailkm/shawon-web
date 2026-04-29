@@ -14,14 +14,14 @@ export default function Logo({ className, showTagline = false }: LogoProps) {
       aria-label="Shawon Telecom WLL"
     >
       <Image
-        src="/images/logoo.webp"
+        src="/images/newlogo.jpg"
         alt=""
         width={507}
         height={299}
         quality={100}
         sizes="88px"
         aria-hidden="true"
-        className="h-9 w-auto flex-none mix-blend-multiply md:h-11"
+        className="h-12 w-auto flex-none mix-blend-multiply md:h-16"
       />
 
       <span className="leading-none">
