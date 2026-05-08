@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 export default function PromoSection() {
   return (
     <Marquee
-      className="bg-[#65b2e1] py-2 text-white"
+      className="bg-black py-2 text-white"
       gradient={false}
       speed={50}
     >

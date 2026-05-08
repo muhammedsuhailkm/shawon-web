@@ -193,7 +193,7 @@ const Name: React.FC<NameProps> = ({ className, ...props }) => {
     <Text
       weight={600}
       color="black/800"
-      className={cn("line-clamp-1", className)}
+      className={cn("line-clamp-2 text-sm", className)}
       {...props}
     >
       {name}

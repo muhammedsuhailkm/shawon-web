@@ -54,7 +54,7 @@
     "rating": 3,
     "name": "Earpods Lightning connector",
     "category": "accessories",
-    "price": 69,
+    "price": 150,
     "description": "Earpods with Lightning Connector deliver rich, high-quality audio with deep bass and crisp treble. The built-in microphone allows for clear hands-free calls, while the compact design ensures comfortable wear. Perfect for on-the-go listening and staying connected.",
     "isNew": false,
     "isBestSeller": false
@@ -69,7 +69,7 @@
     "rating": 4,
     "name": "JBL Tune 310 BT Headphones",
     "category": "accessories",
-    "price": 149,
+    "price": 59,
     "description": "JBL Pure Bass sound, 40H battery life, and fast charging. Foldable for portability, with Voice Assistant integration and comfortable fit.",
     "isNew": false,
     "isBestSeller": false
@@ -82,9 +82,9 @@
       "className": "scale-75 translate-y-0"
     },
     "rating": 3,
-    "name": " Keychain ",
+    "name": " Mobile Ring ",
     "category": "accessories",
-    "price": 101,
+    "price": 49,
     "description": "Best Quality Keychain",
     "isNew": false,
     "isBestSeller": false
@@ -114,7 +114,7 @@
     "rating": 3,
     "name": " SmartWatch Strap ",
     "category": "accessories",
-    "price": 10,
+    "price": 100,
     "description": "Best Quality Smartwatch Strap",
     "isNew": false,
     "isBestSeller": false
@@ -309,7 +309,7 @@
     "rating": 3,
     "name": "Apple Adapter",
     "category": "chargers",
-    "price": 50,
+    "price": 100,
     "description": "Adapter",
     "isNew": false,
     "isBestSeller": false
@@ -324,7 +324,7 @@
     "rating": 3,
     "name": "Dual Type-C Adapter",
     "category": "chargers",
-    "price": 50,
+    "price": 200,
     "description": "Best Quality Dual Type-C Adapter",
     "isNew": false,
     "isBestSeller": false
@@ -337,9 +337,9 @@
       "className": "scale-75 translate-y-0"
     },
     "rating": 3,
-    "name": "Powerbank #1",
+    "name": "Mi Powerbank 3000 Mah",
     "category": "chargers",
-    "price": 59,
+    "price": 99,
     "description": "Best Quality Power Bank",
     "isNew": false,
     "isBestSeller": false
@@ -352,9 +352,9 @@
       "className": "scale-75 translate-y-0"
     },
     "rating": 3,
-    "name": "Powerbank #2",
+    "name": "Porodo 800000mah Powerbank",
     "category": "chargers",
-    "price": 59,
+    "price": 250,
     "description": "Best Quality Power Bank",
     "isNew": false,
     "isBestSeller": false
@@ -537,6 +537,306 @@
     "price": 129,
     "description": "Best Quality Hair Straightener",
     "isNew": false,
+    "isBestSeller": false
+  },
+  {
+    "id": 37,
+    "image": {
+      "src": "/images/12promax.png",
+      "alt": "12promax",
+      "className": "scale-90"
+    },
+    "rating": 4,
+    "name": "Apple iPhone 12 Pro Max",
+    "category": "mobile-phone",
+    "price": 1950,
+    "description": "Apple iPhone 12 Pro Max with A14 Bionic chip, Pro camera system, and stunning Super Retina XDR display.",
+    "isNew": false,
+    "isBestSeller": true
+  },
+  {
+    "id": 38,
+    "image": {
+      "src": "/images/17promax.png",
+      "alt": "17promax",
+      "className": "scale-90"
+    },
+    "rating": 5,
+    "name": "Apple iPhone 17 Pro Max",
+    "category": "mobile-phone",
+    "price": 5150,
+    "description": "Apple iPhone 17 Pro Max with cutting-edge performance, advanced camera system, and premium titanium design.",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 39,
+    "image": {
+      "src": "/images/17promaxjapan.png",
+      "alt": "17promaxjapan",
+      "className": "scale-90"
+    },
+    "rating": 5,
+    "name": "Apple iPhone 17 Pro Max (Japan Edition)",
+    "category": "mobile-phone",
+    "price": 5150,
+    "description": "Apple iPhone 17 Pro Max Japan Edition with exclusive features and premium build quality.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 40,
+    "image": {
+      "src": "/images/airtab.png",
+      "alt": "airtab",
+      "className": "scale-90"
+    },
+    "rating": 4,
+    "name": " Air Tab i17 pro max",
+    "category": "mobile-phone",
+    "price": 280,
+    "description": "Air Tab i17 pro max with M-series chip, Liquid Retina display, and all-day battery life for ultimate productivity.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 41,
+    "image": {
+      "src": "/images/sumax.png",
+      "alt": "sumax",
+      "className": "scale-90"
+    },
+    "rating": 4,
+    "name": "Sumax 17 pro max",
+    "category": "mobile-phone",
+    "price": 250,
+    "description": "Sumax 17 pro max with powerful processor, S Pen support, and pro-grade camera system.",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 42,
+    "image": {
+      "src": "/images/17promaxcase 120QR.png",
+      "alt": "17promaxcase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPhone 17 Pro Max Case",
+    "category": "cases",
+    "price": 120,
+    "description": "Premium quality iPhone 17 Pro Max protective case with stylish design.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 43,
+    "image": {
+      "src": "/images/17promax120QR.png",
+      "alt": "17promax120QR",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPhone 17 Pro Max Cover",
+    "category": "cases",
+    "price": 120,
+    "description": "Durable iPhone 17 Pro Max cover with premium finish and protection.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 44,
+    "image": {
+      "src": "/images/#2 17promax120QR.png",
+      "alt": "17promax case 2",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPhone 17 Pro Max Case #2",
+    "category": "cases",
+    "price": 120,
+    "description": "Stylish iPhone 17 Pro Max case with advanced protection and sleek design.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 45,
+    "image": {
+      "src": "/images/ipadcover 80QR.png",
+      "alt": "ipadcover",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPad Cover",
+    "category": "cases",
+    "price": 80,
+    "description": "Premium iPad protective cover with stand functionality and slim design.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 46,
+    "image": {
+      "src": "/images/17procase100QR.png",
+      "alt": "17procase",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPhone 17 Pro Case",
+    "category": "cases",
+    "price": 100,
+    "description": "High-quality iPhone 17 Pro case with shock-absorbing protection.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 47,
+    "image": {
+      "src": "/images/17promax200QR.png",
+      "alt": "17promax200QR",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 5,
+    "name": "iPhone 17 Pro Max Premium Case",
+    "category": "cases",
+    "price": 200,
+    "description": "Ultra-premium iPhone 17 Pro Max case with MagSafe compatibility and luxury finish.",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 48,
+    "image": {
+      "src": "/images/samsungfold150QR.png",
+      "alt": "samsungfoldcover",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "Samsung Fold Cover",
+    "category": "cases",
+    "price": 150,
+    "description": "Premium Samsung Galaxy Fold protective cover with elegant design.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 49,
+    "image": {
+      "src": "/images/spen.png",
+      "alt": "spen",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "S Pen Stylus",
+    "category": "accessories",
+    "price": 200,
+    "description": "Premium S Pen Stylus with precise control and seamless compatibility.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 50,
+    "image": {
+      "src": "/images/samsung45wpoweradapter80QR.png",
+      "alt": "samsung45wpoweradapter",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "Samsung 45W Power Adapter",
+    "category": "chargers",
+    "price": 80,
+    "description": "Samsung 45W Super Fast Charging power adapter for quick and efficient charging.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 51,
+    "image": {
+      "src": "/images/iphone40wadapter200QR.png",
+      "alt": "iphone40wadapter",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPhone 40W Adapter",
+    "category": "chargers",
+    "price": 200,
+    "description": "Apple 40W USB-C power adapter for fast charging iPhone and iPad.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 52,
+    "image": {
+      "src": "/images/usbctolightingcable150QR.png",
+      "alt": "usbctolightingcable",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "USB-C to Lightning Cable",
+    "category": "chargers",
+    "price": 150,
+    "description": "Premium USB-C to Lightning cable for fast charging and data transfer.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 53,
+    "image": {
+      "src": "/images/lightingtousbcable1m100QR.png",
+      "alt": "lightingtousbcable",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "Lightning to USB Cable 1m",
+    "category": "chargers",
+    "price": 100,
+    "description": "Apple Lightning to USB cable 1 meter for reliable charging and syncing.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 54,
+    "image": {
+      "src": "/images/iphone 60w ctoc1m150QR.png",
+      "alt": "iphone60wctoc",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "iPhone 60W USB-C to C Cable 1m",
+    "category": "chargers",
+    "price": 150,
+    "description": "Apple 60W USB-C to USB-C cable 1 meter for fast charging and data transfer.",
+    "isNew": true,
+    "isBestSeller": false
+  },
+  {
+    "id": 55,
+    "image": {
+      "src": "/images/iphone240wctoccable2m200QR.png",
+      "alt": "iphone240wctoccable",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 5,
+    "name": "iPhone 240W USB-C to C Cable 2m",
+    "category": "chargers",
+    "price": 200,
+    "description": "Apple 240W USB-C to USB-C cable 2 meter for ultra-fast charging and data transfer.",
+    "isNew": true,
+    "isBestSeller": true
+  },
+  {
+    "id": 56,
+    "image": {
+      "src": "/images/samsung45wpdpoweradapterwithcable180QR.png",
+      "alt": "samsung45wpdpoweradapterwithcable",
+      "className": "scale-75 translate-y-0"
+    },
+    "rating": 4,
+    "name": "Samsung 45W PD Power Adapter with Cable",
+    "category": "chargers",
+    "price": 180,
+    "description": "Samsung 45W PD power adapter bundled with USB-C cable for complete fast charging solution.",
+    "isNew": true,
     "isBestSeller": false
   }
 ]

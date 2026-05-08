@@ -14,7 +14,7 @@ export default function Logo({ className, showTagline = false }: LogoProps) {
       aria-label="Shawon Telecom WLL"
     >
       <Image
-        src="/images/newlogo.jpg"
+        src="/images/logonew.jpeg"
         alt=""
         width={507}
         height={299}
@@ -28,7 +28,7 @@ export default function Logo({ className, showTagline = false }: LogoProps) {
         <span className="block text-[10px] font-semibold tracking-wide md:text-xs">
           شاون تيليكوم تريدنج
         </span>
-        <span className="block whitespace-nowrap font-poppins text-sm font-bold tracking-wide text-[#39A8D1] md:text-lg">
+        <span className="block whitespace-nowrap font-poppins text-sm font-bold tracking-wide text-black md:text-lg">
           SHAWON TELECOM WLL
         </span>
         {showTagline && (
