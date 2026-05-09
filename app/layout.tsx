@@ -1,7 +1,6 @@
 // package
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import Script from "next/script";
 
 // lib
 import { cn } from "@/lib/utils";
@@ -9,7 +8,6 @@ import { cn } from "@/lib/utils";
 // css
 import "./globals.css";
 
-const GA_ID = "G-KNSNK9L795";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -81,23 +79,7 @@ export default function RootLayout({
       className={cn(inter.variable, poppins.variable)}
       suppressHydrationWarning
     >
-      <body>
-        {children}
-
-        {/* Google Analytics 4 */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `}
-        </Script>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
