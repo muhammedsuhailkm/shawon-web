@@ -94,18 +94,21 @@ const PRODUCT_BY_SLUG_QUERY = `*[_type == "product" && slug.current == $slug][0]
 }`;
 
 // ---- Fetch functions ----
+// Revalidate every 60 seconds so new/updated products appear without redeploying
+const fetchOptions = { next: { revalidate: 60 } };
+
 export async function getAllProducts(): Promise<TransformedProduct[]> {
-  const products = await client.fetch<SanityProduct[]>(ALL_PRODUCTS_QUERY);
+  const products = await client.fetch<SanityProduct[]>(ALL_PRODUCTS_QUERY, {}, fetchOptions);
   return products.map(transformProduct);
 }
 
 export async function getBestSellers(): Promise<TransformedProduct[]> {
-  const products = await client.fetch<SanityProduct[]>(BEST_SELLERS_QUERY);
+  const products = await client.fetch<SanityProduct[]>(BEST_SELLERS_QUERY, {}, fetchOptions);
   return products.map(transformProduct);
 }
 
 export async function getNewArrivals(): Promise<TransformedProduct[]> {
-  const products = await client.fetch<SanityProduct[]>(NEW_ARRIVALS_QUERY);
+  const products = await client.fetch<SanityProduct[]>(NEW_ARRIVALS_QUERY, {}, fetchOptions);
   return products.map(transformProduct);
 }
 
@@ -115,6 +118,7 @@ export async function getProductsByCategory(
   const products = await client.fetch<SanityProduct[]>(
     PRODUCTS_BY_CATEGORY_QUERY,
     { category },
+    fetchOptions,
   );
   return products.map(transformProduct);
 }
@@ -125,6 +129,7 @@ export async function getProductById(
   const product = await client.fetch<SanityProduct | null>(
     PRODUCT_BY_ID_QUERY,
     { id },
+    fetchOptions,
   );
   return product ? transformProduct(product) : null;
 }
@@ -135,6 +140,7 @@ export async function getProductBySlug(
   const product = await client.fetch<SanityProduct | null>(
     PRODUCT_BY_SLUG_QUERY,
     { slug },
+    fetchOptions,
   );
   return product ? transformProduct(product) : null;
 }
