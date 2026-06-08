@@ -11,21 +11,13 @@ import { formatCurrency } from "@/lib/utils";
 // ui
 import { StarIcon, WishlistIcon } from "@/ui/assets/svg";
 import Button from "@/ui/button";
-import ProductSlider from "@/ui/slider/productSlider";
-import ProductTab from "@/app/(subroot)/products/productTab";
-import ProductVariant from "@/app/(subroot)/products/productVariant";
 import ProductRecommendation from "@/app/(subroot)/products/productRecommendation";
-import { Product } from "@/types/product";
 
-async function getProductById(productId: string) {
-  const res = await fetch(
-    `https://kupingplug.vercel.app/api/products/${productId}`,
-  );
+// sanity
+import { getProductById, getAllProducts } from "@/sanity/queries";
 
-  if (res.status === 404) return notFound();
-
-  return res.json();
-}
+// stores
+import { SanityProductsProvider } from "@/stores/zustand";
 
 export default async function Page({
   params,
@@ -33,29 +25,38 @@ export default async function Page({
   params: Promise<{ productId: string }>;
 }) {
   const { productId } = await params;
-  const product: Product = await getProductById(productId);
+  const product = await getProductById(productId);
+
+  if (!product) return notFound();
+
+  const allProducts = await getAllProducts();
 
   return (
     <SectionLayout>
       <div className="mx-auto space-y-6 p-8 lg:space-y-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(min-content,_400px)_1fr_280px]">
           <div className="relative h-full w-full">
-            <ProductSlider images={product.images} />
+            <div className="flex h-[400px] items-center justify-center bg-[#F3F5F7] lg:h-[500px]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={product.image.src}
+                alt={product.image.alt}
+                className="h-full w-full object-contain p-4"
+              />
+            </div>
           </div>
 
           <div className="mx-auto max-w-[420px] md:max-w-[520px] lg:max-w-none">
             <div className="space-y-4 border-b border-[#E8ECEF] pb-6">
               <div className="flex items-center gap-2.5">
                 <div className="flex items-center gap-1">
-                  <StarIcon className="h-4 w-4" />
-                  <StarIcon className="h-4 w-4" />
-                  <StarIcon className="h-4 w-4" />
-                  <StarIcon className="h-4 w-4" />
-                  <StarIcon className="h-4 w-4" />
+                  {Array.from({ length: product.rating }).map((_, i) => (
+                    <StarIcon key={i} className="h-4 w-4" />
+                  ))}
                 </div>
 
                 <span className="font-inter text-xs font-normal text-[#141718]">
-                  11 Reviews
+                  {product.rating} / 5
                 </span>
               </div>
 
@@ -70,9 +71,6 @@ export default async function Page({
               <p className="font-poppins text-[28px] font-medium text-[#141718]">
                 <span className="align-middle">
                   {formatCurrency(product.price)}
-                </span>
-                <span className="ml-3 align-middle text-xl text-[#6C7275] line-through decoration-2">
-                  QAR 400.00
                 </span>
               </p>
             </div>
@@ -118,19 +116,6 @@ export default async function Page({
               </div>
             </div>
 
-            <div className="space-y-6 py-6">
-              <div className="space-y-2">
-                <p className="font-inter text-base font-semibold text-[#6C7275]">
-                  Measurements
-                </p>
-                <p className="font-inter text-xl font-normal text-[#141718]">
-                  17 1/2x20 5/8
-                </p>
-              </div>
-
-              <ProductVariant variants={product.variants} />
-            </div>
-
             <div className="space-y-4 border-b border-[#E8ECEF] py-6 lg:hidden">
               <div className="flex h-10 gap-2 lg:h-[52px]">
                 <div className="flex h-full w-1/2 items-center justify-between rounded bg-[#F5F5F5] px-2 md:w-3/5 lg:px-4">
@@ -174,20 +159,11 @@ export default async function Page({
             <div className="space-y-2 pt-6">
               <div className="grid grid-cols-[100px_1fr] font-inter text-xs lg:grid-cols-[140px_1fr] lg:text-sm">
                 <span className="text-[#6C7275]">SKU</span>
-                <span className="text-[#141718]">1117</span>
+                <span className="text-[#141718]">{product.id.slice(0, 8)}</span>
               </div>
               <div className="grid grid-cols-[100px_1fr] font-inter text-xs lg:grid-cols-[140px_1fr] lg:text-sm">
                 <span className="text-[#6C7275]">CATEGORY</span>
-                <span className="text-[#141718]">
-                  {product.categories.map((category) => (
-                    <span
-                      key={category}
-                      className="after:ml-0.5 after:mr-1 after:content-[','] last:after:mx-0 last:after:content-['']"
-                    >
-                      {category}
-                    </span>
-                  ))}
-                </span>
+                <span className="text-[#141718]">{product.category}</span>
               </div>
             </div>
           </div>
@@ -200,11 +176,8 @@ export default async function Page({
               <div className="flex items-end justify-between">
                 <p className="font-inter text-sm text-[#6C7275]">Subtotal</p>
                 <div className="space-y-1 text-right">
-                  <p className="font-inter text-sm text-[#6C7275] line-through">
-                    QAR 400.00
-                  </p>
                   <p className="font-poppins text-xl font-semibold text-[#141718]">
-                    QAR 199.00
+                    {formatCurrency(product.price)}
                   </p>
                 </div>
               </div>
@@ -234,8 +207,9 @@ export default async function Page({
           </div>
         </div>
 
-        <ProductTab tabs={product.tabs} />
-        <ProductRecommendation />
+        <SanityProductsProvider products={allProducts}>
+          <ProductRecommendation />
+        </SanityProductsProvider>
       </div>
     </SectionLayout>
   );

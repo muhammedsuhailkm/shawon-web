@@ -1,5 +1,6 @@
-import products from "@/data/product.json";
+import { getAllProducts } from "@/sanity/queries";
 
 export async function GET() {
+  const products = await getAllProducts();
   return Response.json(products);
 }

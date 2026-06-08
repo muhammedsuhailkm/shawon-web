@@ -19,11 +19,18 @@ import {
   MoneyIcon,
 } from "@/ui/assets/svg";
 
-// data
-import products from "@/data/product.json";
+// sanity
+import { getAllProducts, getBestSellers, getNewArrivals } from "@/sanity/queries";
 
-export default function Home() {
-  const bestSellers = products.filter((product) => product.isBestSeller);
+// stores
+import { SanityProductsProvider } from "@/stores/zustand";
+
+export default async function Home() {
+  const [bestSellers, newArrivals, allProducts] = await Promise.all([
+    getBestSellers(),
+    getNewArrivals(),
+    getAllProducts(),
+  ]);
 
   return (
     <>
@@ -75,8 +82,10 @@ export default function Home() {
             New Arrivals
           </Heading>
 
-          {/* catalog product slider */}
-          <CatalogSlider />
+          {/* catalog product slider - hydrate store with all products for the slider */}
+          <SanityProductsProvider products={allProducts}>
+            <CatalogSlider />
+          </SanityProductsProvider>
         </div>
       </SectionLayout>
 

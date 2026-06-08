@@ -21,7 +21,7 @@ import {
 
 export type ProductDataProps = {
   data: {
-    id: number;
+    id: number | string;
     image: {
       src: string;
       alt: string;

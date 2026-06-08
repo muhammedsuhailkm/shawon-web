@@ -2,9 +2,10 @@
 
 // package
 import { create } from "zustand";
+import { useEffect } from "react";
 
-// data
-import productsData from "@/data/product.json";
+// sanity
+import { type TransformedProduct } from "@/sanity/queries";
 
 type ProductDetailProps = {
   showDetail: boolean;
@@ -27,7 +28,7 @@ export type ProductCategory =
   | "cases";
 
 export type ProductStoreItem = {
-  id: number;
+  id: number | string;
   image: {
     src: string;
     alt: string;
@@ -35,7 +36,8 @@ export type ProductStoreItem = {
   };
   rating: number;
   name: string;
-  category: ProductCategory;
+  slug?: string;
+  category: string;
   price: number;
   description: string;
   isNew: boolean;
@@ -44,6 +46,7 @@ export type ProductStoreItem = {
 
 type ProductStoreProps = {
   products: ProductStoreItem[];
+  setProducts: (products: ProductStoreItem[]) => void;
   selectedCategory: ProductCategory | "all";
   setSelectedCategory: (
     category: ProductStoreProps["selectedCategory"],
@@ -56,7 +59,8 @@ type ProductStoreProps = {
 };
 
 export const useProductsStore = create<ProductStoreProps>()((set, get) => ({
-  products: productsData as ProductStoreItem[],
+  products: [],
+  setProducts: (products) => set({ products }),
   selectedCategory: "all",
   setSelectedCategory: (category) => set({ selectedCategory: category }),
   getProductsByCategory: (category) => {
@@ -70,6 +74,23 @@ export const useProductsStore = create<ProductStoreProps>()((set, get) => ({
   getBestSellers: () =>
     get().products.filter((product) => product.isBestSeller),
 }));
+
+// Provider component to hydrate the store with Sanity products
+export function SanityProductsProvider({
+  products,
+  children,
+}: {
+  products: TransformedProduct[];
+  children: React.ReactNode;
+}) {
+  const setProducts = useProductsStore((state) => state.setProducts);
+
+  useEffect(() => {
+    setProducts(products as ProductStoreItem[]);
+  }, [products, setProducts]);
+
+  return <>{children}</>;
+}
 
 export type CartProductItem = {
   id: number;

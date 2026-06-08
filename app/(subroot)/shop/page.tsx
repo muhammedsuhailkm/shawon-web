@@ -13,7 +13,15 @@ import { DropdownIcon } from "@/ui/assets/svg";
 import CatalogProduct from "@/app/(subroot)/shop/catalogProduct";
 import CategoryFilter from "@/app/(subroot)/shop/categoryFilter";
 
-export default function Page() {
+// sanity
+import { getAllProducts } from "@/sanity/queries";
+
+// stores
+import { SanityProductsProvider } from "@/stores/zustand";
+
+export default async function Page() {
+  const allProducts = await getAllProducts();
+
   return (
     <SectionLayout>
       <div className="px-8">
@@ -37,13 +45,15 @@ export default function Page() {
           </Heading>
         </div>
 
-        <Suspense fallback={<div className="py-4">Loading...</div>}>
-          <div className="py-4">
-            <CategoryFilter />
-          </div>
+        <SanityProductsProvider products={allProducts}>
+          <Suspense fallback={<div className="py-4">Loading...</div>}>
+            <div className="py-4">
+              <CategoryFilter />
+            </div>
 
-          <CatalogProduct />
-        </Suspense>
+            <CatalogProduct />
+          </Suspense>
+        </SanityProductsProvider>
       </div>
     </SectionLayout>
   );

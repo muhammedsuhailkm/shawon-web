@@ -8,16 +8,14 @@ import { WishlistIcon } from "@/ui/assets/svg";
 import * as ProductCard from "@/ui/card/productCard";
 
 // stores
-import { useProductDetail } from "@/stores/zustand";
-
-// data
-import allProducts from "@/data/product.json";
+import { useProductDetail, useProductsStore } from "@/stores/zustand";
 
 // lib
 import { cn } from "@/lib/utils";
 
 const CatalogProduct = () => {
   const showDetail = useProductDetail((state) => state.showDetail);
+  const allProducts = useProductsStore((state) => state.products);
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
 

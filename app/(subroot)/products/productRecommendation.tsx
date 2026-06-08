@@ -3,10 +3,12 @@
 // ui
 import * as ProductCard from "@/ui/card/productCard";
 
-// data
-import products from "@/data/product.json";
+// stores
+import { useProductsStore } from "@/stores/zustand";
 
 const ProductRecommendation = () => {
+  const products = useProductsStore((state) => state.products);
+
   return (
     <div className="space-y-10 lg:space-y-12">
       <h2 className="font-poppins text-[28px] font-medium text-[#141718]">
